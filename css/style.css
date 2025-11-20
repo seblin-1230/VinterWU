@@ -5,7 +5,7 @@ body {
 #landing-grid {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 15vh 5vh 65vh 15vh;
+    grid-template-rows: 10vh 5vh 70vh 15vh;
     grid-template-areas: 
     "header"
     "nav"
@@ -25,11 +25,25 @@ body {
 
 header {
     grid-area: header;
-    background-color: lightgreen;
+    background-color: #ebf2f2;
+    border-left: #939393 solid thick;
+    border-right: #939393 solid thick;
+
+    display: flex;
+    align-items: center;
 }
+
 nav {
     grid-area: nav;
-    background-color: purple;
+    background-color: #ebf2f2;
+
+    border: #939393 solid thick;
+    border-top: #939393 dashed thin;
+    border-radius: 0px 0px 15px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main.landing {
@@ -55,4 +69,45 @@ aside {
 
 main {
     background-color: orange;
+}
+
+
+/* Header stuff */
+
+img.logo {
+    height: 80%;
+    margin-left: 2%;
+}
+
+h1 {
+    margin-left: 2%;
+    font-size: 40px;
+    color: black;
+}
+
+
+/* Nav stuff */
+
+nav > * {
+    padding-right: 5%;
+}
+
+nav a {
+    color: #27ae60;
+    font-size: large;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+nav a:hover {
+    color: #1e8649;
+    font-weight: 900;
+    font-size: larger;
+}
+
+nav a#selected {
+    color: #1e8649;
+    font-weight: 900;
+    font-size: larger;
 }

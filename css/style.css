@@ -1,35 +1,139 @@
 body {
-    margin: 0;
+    margin: 0px;
+    background-color: #ebf2f2;
 }
 
-#grid-wrapper {
+#landing-grid {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10vh 5vh 70vh 15vh;
+    grid-template-rows: 10vh 7vh 70vh 13vh;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "sub-main";
+}
 
-    grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "sub-main";
+#browse-grid {
+    display: grid;
+    grid-template-columns: 80vw 20vw;
+    grid-template-rows: 10vh 7vh 83vh;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main aside";
 }
 
 header {
-    background-color: hotpink;
-    grid-area: "header";
+    grid-area: header;
+    background-color: #ebf2f2;
+    border-left: #939393 solid thick;
+    border-right: #939393 solid thick;
+
+    display: flex;
+    align-items: center;
 }
 
 nav {
+    grid-area: nav;
+    background-color: #ebf2f2;
+
+    border: #939393 solid thick;
+    border-top: #939393 dashed thin;
+    border-radius: 0px 0px 15px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.landing {
+    grid-area: main;
+    background-color: orange;
+}
+
+main.browse {
+    grid-area: main;
+    background-color: orange;
+}
+
+
+#sub-main {
+    grid-area: sub-main;
     background-color: blue;
-    grid-area: "nav";
+}
+
+aside {
+    grid-area: aside;
+    background-color: cyan;
 }
 
 main {
-    background-color: green;
-    grid-area: "main";
+    background-color: orange;
 }
 
-.sub-main {
-    background-color: orange;
-    grid-area: "sub-main";
+
+/* Header stuff */
+
+header div {
+    height: 40%;
+    margin-left: auto;
+    margin-right: 10%;
+
+    display: flex;
+    align-items: center;
+}
+
+header div img {
+    height: 85%;
+    margin-right: 1%;
+}
+
+header div input {
+    border: 3px solid #1a7841;
+    border-radius: 8px;
+}
+header div input:focus {
+    border: 3px solid #27ae60;
+    border-radius: 8px;
+    outline: none;
+}
+
+
+img.logo {
+    height: 80%;
+    margin-left: 2%;
+}
+
+h1 {
+    margin-left: 2%;
+    font-size: 40px;
+    color: black;
+}
+
+
+/* Nav stuff */
+
+nav>* {
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+nav a {
+    color: #27ae60;
+    font-size: 150%;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #249955;
+    font-weight: 900;
+    font-size: 160%;
+}
+
+nav a#selected {
+    color: #1e8649;
+    font-weight: 900;
+    font-size: 160%;
 }

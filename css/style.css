@@ -13,22 +13,39 @@ body {
     "sub-main";
 }
 
-header {
-    background-color: Green;
-    grid-area: "header";
+#browse-grid {
+    display: grid;
+    grid-template-columns: 80vw 20vw;
+    grid-template-rows: 15vh 5vh 95vh;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main aside";
 }
 
+header {
+    grid-area: header;
+    background-color: lightgreen;
+}
 nav {
+    grid-area: nav;
     background-color: purple;
-    grid-area: "nav";
+}
+main {
+    grid-area: main;
+    background-color: orange;
+}
+
+#sub-main {
+    grid-area: sub-main;
+    background-color: blue;
+}
+
+aside {
+    grid-area: aside;
+    background-color: cyan;
 }
 
 main {
     background-color: orange;
-    grid-area: "main";
-}
-
-#sub-main {
-    background-color: blue;
-    grid-area: "sub-main";
 }

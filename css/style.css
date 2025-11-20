@@ -39,7 +39,7 @@ nav {
     background-color: #ebf2f2;
 
     border: #939393 solid thick;
-    border-top: #939393 dashed thin;
+    border-top: #6d6d6d dotted medium;
     border-radius: 0px 0px 15px 15px;
 
     display: flex;
@@ -94,11 +94,12 @@ input#searchbar  {
     padding: 0px 10% 0px 2%;
 
     font-size: 120%;
+
+    transition: all 0.2s ease;
 }
 
 input#searchbar:focus {
-    border: 3px solid #27ae60;
-    border-radius: 8px;
+    border-color: #27ae60;
     outline: none;
 }
 
@@ -131,10 +132,12 @@ nav a {
     font-size: 150%;
     text-decoration: none;
     font-weight: 600;
+
+    transition: all 0.2s ease;
 }
 
 nav a:hover {
-    color: #249955;
+    color: #1e8649;
     font-weight: 900;
     font-size: 160%;
 }

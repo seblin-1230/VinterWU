@@ -31,10 +31,17 @@ nav {
     grid-area: nav;
     background-color: purple;
 }
-main {
+
+main.landing {
     grid-area: main;
     background-color: orange;
 }
+
+main.browse {
+    grid-area: main;
+    background-color: orange;
+}
+
 
 #sub-main {
     grid-area: sub-main;

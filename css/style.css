@@ -24,6 +24,17 @@ body {
         "main aside";
 }
 
+#leadership-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh 7vh 83vh;
+    grid-template-areas:
+        "header"
+        "nav"
+        "portrait";
+}
+
+
 header {
     grid-area: header;
     background-color: #ebf2f2;
@@ -68,8 +79,9 @@ aside {
     background-color: cyan;
 }
 
-main {
-    background-color: orange;
+#portrait {
+    grid-area: portrait;
+    background-color: darkgoldenrod;
 }
 
 

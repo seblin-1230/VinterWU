@@ -73,41 +73,48 @@ main {
 }
 
 
-/* Header stuff */
+/* --------- Header stuff --------- */
 
-header div {
-    height: 40%;
+input#searchbar  {
     margin-left: auto;
-    margin-right: 10%;
+    margin-right: 3%;
 
-    display: flex;
-    align-items: center;
-}
+    width: 18vw;
+    height: 40%;
+    box-sizing: border-box;
 
-header div img {
-    height: 85%;
-    margin-right: 1%;
-}
-
-header div input {
     border: 3px solid #1a7841;
     border-radius: 8px;
+
+    background-image: url("../img/search.svg");
+    background-size: 7%;
+    background-position: 2% 50%;
+    background-repeat: no-repeat;
+
+    padding: 0px 10% 0px 2%;
+
+    font-size: 120%;
 }
-header div input:focus {
+
+input#searchbar:focus {
     border: 3px solid #27ae60;
     border-radius: 8px;
     outline: none;
 }
 
+/* Logo and title */
 
 img.logo {
-    height: 80%;
+    height: 90%;
     margin-left: 2%;
 }
 
 h1 {
     margin-left: 2%;
-    font-size: 40px;
+
+    font-family: "Stack Sans Text", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 40px;    
     color: black;
 }
 

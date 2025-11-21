@@ -87,7 +87,6 @@ aside {
 
 #portrait {
     grid-area: portrait;
-    background-color: #ebf2f2;
 }
 
 
@@ -166,6 +165,11 @@ nav a#selected {
 
 /* --------- Leadership stuff --------- */
 
+body.leadership {
+    background: url('../img/leadership-background.jpg') no-repeat;
+    background-size: 100%;
+}
+
 #portrait {
     display: flex;
     flex-direction: column;
@@ -184,7 +188,6 @@ nav a#selected {
     align-items: center;
     margin-bottom: auto;
 }
-
 
 figure {
     background-color: #b1b1b1;

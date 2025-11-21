@@ -6,6 +6,8 @@ body {
     background-color: #ebf2f2;
 }
 
+/* --------- Grid containers --------- */
+
 #landing-grid {
     display: grid;
     grid-template-columns: 100%;
@@ -37,6 +39,7 @@ body {
         "portrait";
 }
 
+/* --------- Grid areas --------- */
 
 header {
     grid-area: header;
@@ -133,7 +136,7 @@ h1 {
 }
 
 
-/* Nav stuff */
+/* --------- Nav stuff --------- */
 
 nav>* {
     margin-right: 3%;
@@ -161,7 +164,7 @@ nav a#selected {
     font-size: 160%;
 }
 
-/* Leadership stuff */
+/* --------- Leadership stuff --------- */
 
 #portrait {
     display: flex;

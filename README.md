@@ -16,8 +16,8 @@ Se ditt din dokumentationsmall för info om företag, syfte, målgrupp och huvud
 
 Layouten på alla sidor skall göras främst med **GRID**. Du skall göra 3 sidor på din webbsida.
 
-- [ ] 3 olika skisser över de olika sidorna  
-- [ ] Olika layout på sidor men konsekvent header \+ navigation   
+- [x] 3 olika skisser över de olika sidorna  
+- [x] Olika layout på sidor men konsekvent header \+ navigation   
 - [ ] En landing page \- Startsida **(GRID)**  
 - [ ] En cardssida (t.ex. anställda, företagets produkter eller liknande) **FLEX (i GRID) ex. till höger** →  
 - [ ] Den tredje sidan **skall lösas med GRID**  

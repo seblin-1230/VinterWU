@@ -203,6 +203,8 @@ figure {
 
 figure:hover {
     width: 17%;
+    background-color: #ffce64;
+    border: solid #b79a5a;
 }
 
 figure img {
@@ -210,6 +212,10 @@ figure img {
 
     border: solid #be8d22;
     border-radius: 20px;
+}
+
+figure img:hover {
+    border: solid #b79a5a;
 }
 
 figcaption {

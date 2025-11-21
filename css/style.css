@@ -204,9 +204,10 @@ figure img {
 
 figcaption {
     font-weight: 600;
-    font-size: large;
+    font-size: 1.25vw;
 }
 
 figcaption~* {
     line-height: 0px;
+    font-size: 0.8vw;
 }

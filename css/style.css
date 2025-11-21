@@ -187,7 +187,7 @@ nav a#selected {
 
 
 figure {
-    background-color: #f7b62a;
+    background-color: #b1b1b1;
     width: 15%;
 
     display: flex;
@@ -196,7 +196,7 @@ figure {
 
     padding: 0.75%;
 
-    border: solid #be8d22;
+    border: solid #888888;
     border-radius: 20px;
 
     transition: all 0.5s ease;
@@ -211,7 +211,7 @@ figure:hover {
 figure img {
     width: 100%;
 
-    border: solid #be8d22;
+    border: solid #888888;
     border-radius: 20px;
 }
 
@@ -222,9 +222,11 @@ figure img:hover {
 figcaption {
     font-weight: 600;
     font-size: 1.25vw;
+    margin-bottom: 0.5vh;
 }
 
 figcaption~* {
     line-height: 0px;
     font-size: 0.8vw;
+    margin-top: 0px;
 }

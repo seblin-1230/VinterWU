@@ -90,7 +90,7 @@ aside {
 }
 
 
-/* --------- Header stuff --------- */
+/* --------- Header stuff ---------  (TODO: Very basic just a gray background) */
 
 input#searchbar {
     margin-left: auto;
@@ -135,7 +135,7 @@ h1 {
 }
 
 
-/* --------- Nav stuff --------- */
+/* --------- Nav stuff --------- (TODO: Very basic just a gray background) */
 
 nav>* {
     margin-right: 3%;

@@ -191,7 +191,7 @@ body.leadership {
     margin-bottom: auto;
 }
 
-figure {
+figure.leadership {
     background-color: #b1b1b1;
     width: 15%;
 
@@ -207,7 +207,7 @@ figure {
     transition: all 0.3s ease-in-out;
 }
 
-figure:hover {
+figure.leadership:hover {
     width: 17%;
     background-color: #ffce64;
     border: solid #b79a5a;
@@ -220,17 +220,17 @@ figure img {
     border-radius: 20px;
 }
 
-figure img:hover {
+figure.leadership img:hover {
     border: solid #b79a5a;
 }
 
-figcaption {
+figcaption.leadership {
     font-weight: 600;
     font-size: 1.25vw;
     margin-bottom: 0.5vh;
 }
 
-figcaption~* {
+figcaption.leadership~* {
     line-height: 0px;
     font-size: 0.8vw;
     margin-top: 0px;

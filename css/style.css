@@ -1,6 +1,6 @@
 body {
     font-family: "Stack Sans Text", sans-serif;
-    font-optical-sizing: auto;
+  font-optical-sizing: auto;
 
     margin: 0px;
     background-color: #ebf2f2;
@@ -131,6 +131,8 @@ h1 {
 
     font-size: 40px;
     color: black;
+    font-weight: 300;
+    letter-spacing: 0.5vw;
 }
 
 
@@ -145,20 +147,21 @@ nav a {
     color: #27ae60;
     font-size: 150%;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 100;
+    letter-spacing: 0.2vw;
 
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
 }
 
 nav a:hover {
     color: #1e8649;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 160%;
 }
 
 nav a#selected {
     color: #1e8649;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 160%;
 }
 
@@ -182,6 +185,9 @@ body.leadership {
 #portrait h2 {
     margin-bottom: auto;
     margin-top: 2%;
+
+    font-weight: 100;
+    letter-spacing: 0.4vw;
 }
 
 #figure-div {
@@ -192,7 +198,7 @@ body.leadership {
 }
 
 figure.leadership {
-    background-color: #b1b1b1;
+    /* background-color: #b1b1b1; */
     width: 15%;
 
     display: flex;
@@ -201,7 +207,7 @@ figure.leadership {
 
     padding: 0.75%;
 
-    border: solid #888888;
+    /* border: solid #888888; */
     border-radius: 20px;
 
     transition: all 0.3s ease-in-out;
@@ -225,7 +231,7 @@ figure.leadership img:hover {
 }
 
 figcaption.leadership {
-    font-weight: 600;
+    font-weight: 250;
     font-size: 1.25vw;
     margin-bottom: 0.5vh;
 }
@@ -234,4 +240,5 @@ figcaption.leadership~* {
     line-height: 0px;
     font-size: 0.8vw;
     margin-top: 0px;
+    font-weight: 350;
 }

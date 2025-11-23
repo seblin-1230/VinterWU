@@ -43,12 +43,6 @@ body {
 
 header {
     grid-area: header;
-    background-color: #bbc0c0;
-    border-left: #939393 solid thick;
-    border-right: #939393 solid thick;
-
-    display: flex;
-    align-items: center;
 }
 
 nav {
@@ -91,6 +85,15 @@ aside {
 
 /* --------- Header stuff ---------  (TODO: Very basic just a gray background) */
 
+header {
+    background-color: #092825;
+    border-left: #939393 solid thick;
+    border-right: #939393 solid thick;
+
+    display: flex;
+    align-items: center;
+}
+
 input#searchbar {
     margin-left: auto;
     margin-right: 3%;
@@ -119,8 +122,6 @@ input#searchbar:focus {
     outline: none;
 }
 
-/* Logo and title */
-
 img.logo {
     height: 90%;
     margin-left: 2%;
@@ -130,7 +131,7 @@ h1 {
     margin-left: 2%;
 
     font-size: 40px;
-    color: black;
+    color: #27ae60;
     font-weight: 300;
     letter-spacing: 0.5vw;
 }
@@ -219,7 +220,7 @@ figure.leadership:hover {
     border: solid #b79a5a;
 }
 
-figure img {
+figure.leadership img {
     width: 100%;
 
     border: solid #888888;

@@ -55,9 +55,7 @@ main.landing {
 
 main.browse {
     grid-area: main;
-    background-color: orange;
 }
-
 
 #sub-main {
     grid-area: sub-main;
@@ -170,6 +168,25 @@ nav a#selected {
 }
 
 /* --------- Landing stuff --------- */
+
+
+/* --------- Browse stuff --------- */
+body.browse {
+    background-color: #061c1a;
+}
+
+main.browse {
+    display: flex;
+}
+
+aside {
+    background-color: #092825;
+
+    border: #114b45 solid medium;
+    border-right: none;
+    margin: 5% 0px 5% 0px;
+    border-radius: 15px 0px 0px 15px;
+}
 
 
 /* --------- Leadership stuff --------- */

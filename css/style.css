@@ -1,6 +1,6 @@
 body {
     font-family: "Stack Sans Text", sans-serif;
-    font-optical-sizing: auto;
+  font-optical-sizing: auto;
 
     margin: 0px;
     background-color: #ebf2f2;
@@ -43,12 +43,6 @@ body {
 
 header {
     grid-area: header;
-    background-color: #bbc0c0;
-    border-left: #939393 solid thick;
-    border-right: #939393 solid thick;
-
-    display: flex;
-    align-items: center;
 }
 
 nav {
@@ -66,7 +60,6 @@ nav {
 
 main.landing {
     grid-area: main;
-    background-color: orange;
 }
 
 main.browse {
@@ -87,11 +80,19 @@ aside {
 
 #portrait {
     grid-area: portrait;
-    background-color: #ebf2f2;
 }
 
 
-/* --------- Header stuff --------- */
+/* --------- Header stuff ---------  (TODO: Very basic just a gray background) */
+
+header {
+    background-color: #092825;
+    border-left: #939393 solid thick;
+    border-right: #939393 solid thick;
+
+    display: flex;
+    align-items: center;
+}
 
 input#searchbar {
     margin-left: auto;
@@ -121,8 +122,6 @@ input#searchbar:focus {
     outline: none;
 }
 
-/* Logo and title */
-
 img.logo {
     height: 90%;
     margin-left: 2%;
@@ -132,11 +131,13 @@ h1 {
     margin-left: 2%;
 
     font-size: 40px;
-    color: black;
+    color: #27ae60;
+    font-weight: 300;
+    letter-spacing: 0.5vw;
 }
 
 
-/* --------- Nav stuff --------- */
+/* --------- Nav stuff --------- (TODO: Very basic just a gray background) */
 
 nav>* {
     margin-right: 3%;
@@ -144,27 +145,36 @@ nav>* {
 }
 
 nav a {
-    color: #27ae60;
+    color: #287b69;
     font-size: 150%;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 100;
+    letter-spacing: 0.2vw;
 
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
 }
 
 nav a:hover {
-    color: #1e8649;
-    font-weight: 900;
+    color: #27ae60;
+    font-weight: 400;
     font-size: 160%;
 }
 
 nav a#selected {
-    color: #1e8649;
-    font-weight: 900;
+    color: #27ae60;
+    font-weight: 400;
     font-size: 160%;
 }
 
+/* --------- Landing stuff --------- */
+
+
 /* --------- Leadership stuff --------- */
+
+body.leadership {
+    background: url('../img/leadership-background.jpg') no-repeat;
+    background-size: 100%;
+}
 
 #portrait {
     display: flex;
@@ -176,17 +186,20 @@ nav a#selected {
 #portrait h2 {
     margin-bottom: auto;
     margin-top: 2%;
+
+    font-weight: 100;
+    letter-spacing: 0.4vw;
 }
 
 #figure-div {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: auto;
 }
 
-
-figure {
-    background-color: #f7b62a;
+figure.leadership {
+    /* background-color: #b1b1b1; */
     width: 15%;
 
     display: flex;
@@ -195,35 +208,38 @@ figure {
 
     padding: 0.75%;
 
-    border: solid #be8d22;
+    /* border: solid #888888; */
     border-radius: 20px;
 
-    transition: all 0.5s ease;
+    transition: all 0.3s ease-in-out;
 }
 
-figure:hover {
-    width: 16%;
+figure.leadership:hover {
+    width: 17%;
     background-color: #ffce64;
     border: solid #b79a5a;
 }
 
-figure img {
+figure.leadership img {
     width: 100%;
 
-    border: solid #be8d22;
+    border: solid #888888;
     border-radius: 20px;
 }
 
-figure img:hover {
+figure.leadership img:hover {
     border: solid #b79a5a;
 }
 
-figcaption {
-    font-weight: 600;
+figcaption.leadership {
+    font-weight: 250;
     font-size: 1.25vw;
+    margin-bottom: 0.5vh;
 }
 
-figcaption~* {
+figcaption.leadership~* {
     line-height: 0px;
     font-size: 0.8vw;
+    margin-top: 0px;
+    font-weight: 350;
 }

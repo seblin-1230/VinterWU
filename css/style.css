@@ -47,15 +47,6 @@ header {
 
 nav {
     grid-area: nav;
-    background-color: #bbc0c0;
-
-    border: #939393 solid thick;
-    border-top: #6d6d6d dotted medium;
-    border-radius: 0px 0px 15px 15px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 main.landing {
@@ -87,8 +78,8 @@ aside {
 
 header {
     background-color: #092825;
-    border-left: #939393 solid thick;
-    border-right: #939393 solid thick;
+    border-left: #114b45 solid medium;
+    border-right: #114b45 solid medium;
 
     display: flex;
     align-items: center;
@@ -112,7 +103,7 @@ input#searchbar {
 
     padding: 0px 10% 0px 2%;
 
-    font-size: 120%;
+    font-size: 100%;
 
     transition: all 0.2s ease;
 }
@@ -138,6 +129,18 @@ h1 {
 
 
 /* --------- Nav stuff --------- (TODO: Very basic just a gray background) */
+
+nav {
+    background-color: #092825;
+
+    border: #114b45 solid medium;
+    border-top: #6d6d6d dotted medium;
+    border-radius: 0px 0px 15px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 nav>* {
     margin-right: 3%;

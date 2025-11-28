@@ -177,6 +177,9 @@ body.browse {
 
 main.browse {
     display: flex;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 aside {
@@ -186,6 +189,14 @@ aside {
     border-right: none;
     margin: 5% 0px 5% 0px;
     border-radius: 15px 0px 0px 15px;
+}
+
+figure.browse {
+    height: 25%;
+}
+
+figure.browse img {
+    height: 100%;
 }
 
 

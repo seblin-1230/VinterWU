@@ -195,6 +195,14 @@ div.collumn {
     width: 33%;
 }
 
+figure.browse {
+    margin: 5%;
+}
+
+figure.browse img {
+    width: 100%;
+}
+
 
 /* --------- Leadership stuff --------- */
 

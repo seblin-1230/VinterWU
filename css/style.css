@@ -191,12 +191,8 @@ aside {
     border-radius: 15px 0px 0px 15px;
 }
 
-figure.browse {
-    height: 25%;
-}
-
-figure.browse img {
-    height: 100%;
+div.collumn {
+    width: 33%;
 }
 
 

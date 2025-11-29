@@ -203,7 +203,6 @@ figure.browse {
 
     transition: transform 0.2s ease-in-out;
 }
-
 figure.browse:hover {
     transform: scale(1.05);
 }
@@ -214,8 +213,10 @@ figure.browse img {
     border-radius: 10px;
 }
 
-figure.browse > * {
+figure.browse > *:not(img) {
     color: white;
+    position: absolute;
+}
 }
 
 /* --------- Leadership stuff --------- */

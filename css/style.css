@@ -198,6 +198,12 @@ div.collumn {
 
 figure.browse {
     margin: 5%;
+
+    transition: transform 0.2s ease-in-out;
+}
+
+figure.browse:hover {
+    transform: scale(1.05);
 }
 
 figure.browse img {

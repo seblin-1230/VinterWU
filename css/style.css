@@ -214,6 +214,9 @@ figure.browse img {
     border-radius: 10px;
 }
 
+figure.browse > * {
+    color: white;
+}
 
 /* --------- Leadership stuff --------- */
 

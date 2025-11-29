@@ -75,9 +75,9 @@ aside {
 /* --------- Header stuff ---------  (TODO: Very basic just a gray background) */
 
 header {
-    background-color: #092825;
-    border-left: #114b45 solid medium;
-    border-right: #114b45 solid medium;
+    background-color: #282e2d;
+    border-left: #4d5b53 solid medium;
+    border-right: #4d5b53 solid medium;
 
     display: flex;
     align-items: center;
@@ -129,9 +129,9 @@ h1 {
 /* --------- Nav stuff --------- (TODO: Very basic just a gray background) */
 
 nav {
-    background-color: #092825;
+    background-color: #282e2d;
 
-    border: #114b45 solid medium;
+    border: #4d5b53 solid medium;
     border-top: #6d6d6d dotted medium;
     border-radius: 0px 0px 15px 15px;
 
@@ -172,7 +172,7 @@ nav a#selected {
 
 /* --------- Browse stuff --------- */
 body.browse {
-    background-color: #061c1a;
+    background-color: #161919;
 }
 
 main.browse {
@@ -184,9 +184,9 @@ main.browse {
 }
 
 aside {
-    background-color: #092825;
+    background-color: #282e2d;
 
-    border: #114b45 solid medium;
+    border: #4d5b53 solid medium;
     border-right: none;
     margin: 5% 0px 5% 0px;
     border-radius: 15px 0px 0px 15px;

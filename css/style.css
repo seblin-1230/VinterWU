@@ -204,6 +204,7 @@ figure.browse {
 
     transition: transform 0.2s ease-in-out;
 }
+
 figure.browse:hover {
     transform: scale(1.05);
 }
@@ -225,14 +226,18 @@ figure.browse figcaption {
     left: 1%;
 }
 
-figure.browse > *:not(img) {
-    color: white;
+figure.browse>*:not(img) {
+    color: black;
+    -webkit-text-stroke: 0.5px white;
+    font-weight: 800;
+
     opacity: 0%;
     position: absolute;
 
     transition: opacity 0.75s ease-in-out;
 }
-figure.browse:hover > *:not(img) {
+
+figure.browse:hover>*:not(img) {
     opacity: 100%;
 }
 

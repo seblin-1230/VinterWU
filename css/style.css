@@ -197,6 +197,7 @@ div.collumn {
 }
 
 figure.browse {
+    position: relative;
     margin: 5%;
     border: #4d5b53 solid medium;
     border-radius: 10px;
@@ -213,16 +214,28 @@ figure.browse img {
     border-radius: 10px;
 }
 
+figure.browse p {
+    font-size: small;
+    bottom: 0px;
+    left: 1%;
+}
+
+figure.browse figcaption {
+    top: 1%;
+    left: 1%;
+}
+
 figure.browse > *:not(img) {
     color: white;
     opacity: 0%;
     position: absolute;
 
-    transition: opacity 2s ease-in-out;
+    transition: opacity 0.75s ease-in-out;
 }
 figure.browse:hover > *:not(img) {
     opacity: 100%;
 }
+
 
 /* --------- Leadership stuff --------- */
 

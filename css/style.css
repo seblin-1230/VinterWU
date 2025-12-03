@@ -213,6 +213,8 @@ figure.browse img {
     display: block;
     width: 100%;
     border-radius: 15px;
+
+    background-color: #4d5b53;
 }
 
 figure.browse p {

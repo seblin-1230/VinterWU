@@ -3,7 +3,7 @@ body {
     font-optical-sizing: auto;
 
     margin: 0px;
-    background-color: #ebf2f2;
+    background-color: #161919;
 }
 
 /* --------- Grid containers --------- */
@@ -171,9 +171,7 @@ nav a#selected {
 
 
 /* --------- Browse stuff --------- */
-body.browse {
-    background-color: #161919;
-}
+
 
 main.browse {
     display: flex;

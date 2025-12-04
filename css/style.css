@@ -208,6 +208,7 @@ figure.browse:hover {
 }
 
 figure.browse img {
+    box-sizing: border-box;
     display: block;
     width: 100%;
     border: #4d5b53 solid 3px;
@@ -215,11 +216,12 @@ figure.browse img {
 }
 
 figure.browse p {
+    box-sizing: border-box;
     font-size: smaller;
     font-weight: 300;
     
-    bottom: 2px;
-    left: 2px;
+    bottom: 0px;
+    left: 0px;
 
     padding: 2% 2% 1%;
     border-radius: 15px;
@@ -228,8 +230,8 @@ figure.browse p {
 figure.browse figcaption {
     font-weight: 500;
 
-    top: 2px;
-    left: 2px;
+    top: 0px;
+    left: 0px;
 
     padding: 1% 3% 1% 1%;
     border-radius: 15px 0px;

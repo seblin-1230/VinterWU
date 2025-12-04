@@ -199,8 +199,6 @@ div.collumn {
 figure.browse {
     position: relative;
     margin: 5%;
-    border: #4d5b53 solid medium;
-    border-radius: 15px;
 
     transition: transform 0.2s ease-in-out;
 }
@@ -212,9 +210,8 @@ figure.browse:hover {
 figure.browse img {
     display: block;
     width: 100%;
+    border: #4d5b53 solid medium;
     border-radius: 15px;
-
-    background-color: #4d5b53;
 }
 
 figure.browse p {

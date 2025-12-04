@@ -101,7 +101,7 @@ input#searchbar {
 
     padding: 0px 10% 0px 2%;
 
-    font-size: 100%;
+    font-size: 0.9rem;
 
     transition: all 0.2s ease;
 }
@@ -119,7 +119,7 @@ img.logo {
 h1 {
     margin-left: 2%;
 
-    font-size: 40px;
+    font-size: 3rem;
     color: #27ae60;
     font-weight: 300;
     letter-spacing: 0.5vw;
@@ -147,9 +147,9 @@ nav>* {
 
 nav a {
     color: #287b69;
-    font-size: 150%;
+    font-size: 1.8rem;
     text-decoration: none;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.2vw;
 
     transition: all 0.4s ease;
@@ -158,13 +158,13 @@ nav a {
 nav a:hover {
     color: #27ae60;
     font-weight: 400;
-    font-size: 160%;
+    font-size: 2rem;
 }
 
 nav a#selected {
     color: #27ae60;
     font-weight: 400;
-    font-size: 160%;
+    font-size: 2rem;
 }
 
 /* --------- Landing stuff --------- */
@@ -217,7 +217,7 @@ figure.browse img {
 
 figure.browse p {
     box-sizing: border-box;
-    font-size: smaller;
+    font-size: 0.77rem;
     font-weight: 300;
     
     bottom: 0px;
@@ -228,6 +228,7 @@ figure.browse p {
 }
 
 figure.browse figcaption {
+    font-size: 0.9rem;
     font-weight: 500;
 
     top: 0px;
@@ -273,6 +274,7 @@ body.leadership {
     margin-top: 2%;
 
     font-weight: 100;
+    font-size: 1.8rem;
     letter-spacing: 0.4vw;
 }
 
@@ -316,13 +318,13 @@ figure.leadership img:hover {
 
 figcaption.leadership {
     font-weight: 250;
-    font-size: 1.25vw;
+    font-size: 0.9rem;
     margin-bottom: 0.5vh;
 }
 
 figcaption.leadership~* {
     line-height: 0px;
-    font-size: 0.8vw;
+    font-size: 0.77rem;
     margin-top: 0px;
     font-weight: 350;
 }

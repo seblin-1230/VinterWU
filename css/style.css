@@ -225,7 +225,7 @@ figure.browse p {
 
     padding: 4% 5% 3%;
 
-    border-radius: 15px;
+    border-radius: 0px 0px 15px 15px;
     border-bottom: #4d5b53 solid 3px;
     border-left: #4d5b53 solid 3px;
     border-right: #4d5b53 solid 3px;;

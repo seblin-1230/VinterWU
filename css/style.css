@@ -11,7 +11,7 @@ body {
 #landing-grid {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10vh 7vh 70vh 13vh;
+    grid-template-rows: 10vh 7vh 90vh 15vh;
     grid-template-areas:
         "header"
         "nav"
@@ -178,6 +178,32 @@ main.landing {
 h2.landing {
     color: whitesmoke;
     
+}
+
+img.carousel {
+  display: block;
+  max-height: 100%;
+  max-width: max-content;
+}
+
+div.carousel {
+  overflow: hidden;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 90%;
+  grid-gap: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery-img {
+  scroll-snap-align: center;
+  margin: 0 auto;
 }
 
 

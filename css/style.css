@@ -181,33 +181,59 @@ h2.landing {
 }
 
 img.carousel {
-  display: block;
-  max-height: 100%;
-  max-width: max-content;
+    display: block;
+    max-height: 100%;
+    max-width: max-content;
 }
 
 div.carousel {
-  overflow: hidden;
-  width: 100vw;
-  display: grid;
-  grid-template-rows: 90%;
-  grid-gap: 10px;
+    overflow: hidden;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 90%;
+    grid-gap: 10px;
 }
 
 .gallery {
-  display: flex;
-  flex-direction: row;
-  overflow: scroll;
-  scroll-snap-type: x mandatory;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
 }
 
-.gallery-img {
-  scroll-snap-align: center;
-  margin-left: 55vh;
+figure.landing {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+
+    width: fit-content;
+
+    transition: transform 0.2s ease-in-out;
+
+    scroll-snap-align: center;
+    margin-left: 55vh;
 }
 
-.gallery-img:last-child {
+figure.landing:last-child {
     margin-right: 55vh;
+}
+
+figure.landing figcaption {
+    position: absolute;
+    top: 0px;
+
+    color: whitesmoke;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+figure.landing p {
+    position: absolute;
+    bottom: 0px;
 }
 
 
@@ -257,7 +283,7 @@ figure.browse p {
     box-sizing: border-box;
     font-size: 0.77rem;
     font-weight: 300;
-    
+
     bottom: 0px;
     left: 0px;
 
@@ -266,7 +292,8 @@ figure.browse p {
     border-radius: 0px 0px 15px 15px;
     border-bottom: #4d5b53 solid 3px;
     border-left: #4d5b53 solid 3px;
-    border-right: #4d5b53 solid 3px;;
+    border-right: #4d5b53 solid 3px;
+    ;
 }
 
 figure.browse figcaption {

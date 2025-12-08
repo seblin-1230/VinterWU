@@ -203,7 +203,11 @@ div.carousel {
 
 .gallery-img {
   scroll-snap-align: center;
-  margin: 0 auto;
+  margin-left: 55vh;
+}
+
+.gallery-img:last-child {
+    margin-right: 55vh;
 }
 
 

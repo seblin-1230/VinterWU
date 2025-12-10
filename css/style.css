@@ -212,6 +212,9 @@ figure.landing img {
     display: block;
     max-height: 100%;
     max-width: max-content;
+
+    border-radius: 15px;
+    border: whitesmoke solid medium;
 }
 
 figure.landing:last-child {
@@ -233,6 +236,7 @@ figure.landing figcaption {
     padding-top: 0.7%;
 
     border-radius: 0px 0px 15px 15px;
+    border-top: whitesmoke solid medium;
 }
 
 figure.landing p {
@@ -250,7 +254,9 @@ figure.landing p {
     padding-top: 2%;
     margin: 0px;
 
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 0px 0px 15px 15px;
+    border: white solid medium;
+    border-top: none;
 }
 
 

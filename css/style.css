@@ -334,14 +334,16 @@ figure.browse figcaption {
     border-left: #4d5b53 solid 3px;
 }
 
-figure.browse>*:not(img) {
+figure.browse>*:not(img):not(button) {
     color: white;
-
-    opacity: 0%;
-    position: absolute;
 
     background-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 0px;
+}
+
+figure.browse>*:not(img) {
+    opacity: 0%;
+    position: absolute;
 
     transition: opacity 0.75s ease-in-out;
 }
@@ -369,7 +371,7 @@ figure.browse button {
 
     padding: 1%;
 
-    transition: background-color 0.2s, width 0.03s ease-in-out;
+    transition: background-color 0.2s, width 0.03s ease-in-out, opacity 0.75s ease-in-out;
 }
 
 figure.browse button:hover {

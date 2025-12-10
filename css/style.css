@@ -387,6 +387,51 @@ figure.browse button img {
 }
 
 /* TODO Browse aside*/
+aside.browse {
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: scroll;
+}
+
+.saved-places {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: #6d6d6d dotted thin;
+}
+
+.saved-places p {
+    color: whitesmoke;
+
+    margin-left: 5%;
+}
+
+.saved-places button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 7.5%;
+    height: 7.5%;
+
+    padding: 1%;
+
+    margin-right: 10%;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    transition: all 0.2s ease-in-out;
+}
+.saved-places button:hover {
+    width: 8%;
+    height: 8%;
+}
+
+.saved-places button img {
+    width: 100%;
+}
 
 
 /* --------- Leadership stuff --------- */

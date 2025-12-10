@@ -5,39 +5,53 @@ var saved_places = []
  */
 function save_button_click(button) {
     if (!saved_places.includes(button.id)) {
-        save_place(button);
+        save_place(button.id);
     } else {
-        remove_place(button);
+        remove_place(button.id);
     }
 }
 
 /**
- * @param {Element} button The button element
+ * @param {String} name_to_add The name of the element to add
  */
-function save_place(button) {
-    saved_places.push(button.id);
+function save_place(name_to_add) {
+    saved_places.push(name_to_add);
 
-    button.children[0].src = "img/save-instagram-saved.png";
+    document.getElementById(name_to_add).children[0].src = "img/save-instagram-saved.png"; // Change button image to empty one
 
     const aside = document.getElementsByTagName("aside")[0];
 
+    // Create saved place div
+    const div = document.createElement("div");
+    div.setAttribute("name", name_to_add);
+    div.setAttribute("class", "saved-places");
+
+    // Create saved plave paragraph, The name of the place
     const paragraph = document.createElement("p");
-    const text_node = document.createTextNode(button.id);
+    paragraph.appendChild(document.createTextNode(name_to_add));
 
-    paragraph.setAttribute("name", button.id);
-    paragraph.appendChild(text_node);
+    div.appendChild(paragraph);
 
-    aside.appendChild(paragraph);
+    // Create button for removing place from saved list
+    const remove_button = document.createElement("button");
+    remove_button.setAttribute("type", "button");
+    remove_button.setAttribute("placetoremove", name_to_add)
+    remove_button.setAttribute("onclick", "remove_place(this.getAttribute(\"placetoremove\"))")
+    
+    div.appendChild(remove_button)
+
+    // Add div to html
+    aside.appendChild(div);
 }
 
 /**
- * @param {Element} button The button element
+ * @param {String} name_to_remove The name of the element to remove
  */
-function remove_place(button) {
-    saved_places.splice(saved_places.indexOf(button.id));
+function remove_place(name_to_remove) {
+    saved_places.splice(saved_places.indexOf(name_to_remove));
 
-    button.children[0].src = "img/save-instagram-not-saved.png";
+    document.getElementById(name_to_remove).children[0].src = "img/save-instagram-not-saved.png"; // Change button image to full one
 
-    const paragraph = document.getElementsByName(button.id)[0];
+    const paragraph = document.getElementsByName(name_to_remove)[0];
     paragraph.remove()
 }

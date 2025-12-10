@@ -294,7 +294,8 @@ figure.browse:hover {
     transform: scale(1.05);
 }
 
-figure.browse img:not(:only-child) { /* Exludes buttons lol */
+figure.browse img:not(:only-child) {
+    /* Exludes buttons lol */
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -361,15 +362,23 @@ figure.browse button {
 
     margin: 0px;
 
-    background-color: whitesmoke;
+    background-color: rgb(209, 209, 209);
 
     border-radius: 0px 15px;
     border: #4d5b53 solid 3px;
 
     padding: 1%;
+
+    transition: background-color 0.2s, width 0.03s ease-in-out;
 }
 
+figure.browse button:hover {
+    background-color: whitesmoke;
+}
 
+figure.browse button:active {
+    width: 11%;
+}
 
 figure.browse button img {
     width: 100%;

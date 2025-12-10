@@ -1,6 +1,7 @@
 body {
     font-family: "Stack Sans Text", sans-serif;
     font-optical-sizing: auto;
+    font-optical-sizing: auto;
 
     margin: 0px;
     background-color: #161919;
@@ -64,7 +65,6 @@ main.browse {
 
 aside {
     grid-area: aside;
-    background-color: cyan;
 }
 
 #portrait {

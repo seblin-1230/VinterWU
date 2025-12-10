@@ -386,7 +386,6 @@ figure.browse button img {
     width: 100%;
 }
 
-/* TODO Browse aside*/
 aside.browse {
     display: flex;
     flex-direction: column;
@@ -424,6 +423,7 @@ aside.browse {
 
     transition: all 0.2s ease-in-out;
 }
+
 .saved-places button:hover {
     width: 8%;
     height: 8%;

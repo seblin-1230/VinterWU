@@ -180,12 +180,6 @@ h2.landing {
     font-size: 1.4rem;
 }
 
-img.carousel {
-    display: block;
-    max-height: 100%;
-    max-width: max-content;
-}
-
 div.carousel {
     overflow: hidden;
     width: 100vw;
@@ -211,11 +205,17 @@ figure.landing {
     transition: transform 0.2s ease-in-out;
 
     scroll-snap-align: center;
-    margin-left: 55vh;
+    margin-left: 50vh;
+}
+
+figure.landing img {
+    display: block;
+    max-height: 100%;
+    max-width: max-content;
 }
 
 figure.landing:last-child {
-    margin-right: 55vh;
+    margin-right: 50vh;
 }
 
 figure.landing figcaption {

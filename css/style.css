@@ -352,7 +352,7 @@ figure.browse:hover>*:not(img) {
     opacity: 100%;
 }
 
-.save-button {
+figure.browse button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -371,18 +371,18 @@ figure.browse:hover>*:not(img) {
 
     padding: 1%;
 
-    transition: background-color 0.2s, width 0.03s ease-in-out, opacity 0.75s ease-in-out;
+    transition: opacity 0.75s ease-in-out, background-color 0.2s, width 0.07s ease-in-out;
 }
 
-.save-button:hover {
+figure.browse button:hover {
     background-color: whitesmoke;
 }
 
-.save-button:active {
+figure.browse button:active {
     width: 11%;
 }
 
-.save-button img {
+figure.browse button img {
     width: 100%;
 }
 

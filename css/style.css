@@ -350,6 +350,10 @@ figure.browse:hover>*:not(img) {
 }
 
 figure.browse button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     top: 0px;
     right: 0px;
 
@@ -359,8 +363,13 @@ figure.browse button {
 
     background-color: whitesmoke;
 
-    opacity: 100%;
+    border-radius: 0px 15px;
+    border: #4d5b53 solid 3px;
+
+    padding: 1%;
 }
+
+
 
 figure.browse button img {
     width: 100%;

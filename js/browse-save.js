@@ -37,7 +37,12 @@ function save_place(name_to_add) {
     remove_button.setAttribute("type", "button");
     remove_button.setAttribute("placetoremove", name_to_add)
     remove_button.setAttribute("onclick", "remove_place(this.getAttribute(\"placetoremove\"))")
+
+    // Create image for button
+    const remove_img = document.createElement("img");
+    remove_img.setAttribute("src", "img/remove.png");
     
+    remove_button.appendChild(remove_img)
     div.appendChild(remove_button)
 
     // Add div to html

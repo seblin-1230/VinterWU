@@ -1,4 +1,4 @@
-var saved_places = []
+var saved_places = [];
 
 /**
  * @param {Element} button The button element
@@ -41,9 +41,9 @@ function save_place(name_to_add) {
     // Create image for button
     const remove_img = document.createElement("img");
     remove_img.setAttribute("src", "img/remove.png");
-    
-    remove_button.appendChild(remove_img)
-    div.appendChild(remove_button)
+
+    remove_button.appendChild(remove_img);
+    div.appendChild(remove_button);
 
     // Add div to html
     aside.appendChild(div);
@@ -58,5 +58,5 @@ function remove_place(name_to_remove) {
     document.getElementById(name_to_remove).children[0].src = "img/save-instagram-not-saved.png"; // Change button image to full one
 
     const paragraph = document.getElementsByName(name_to_remove)[0];
-    paragraph.remove()
+    paragraph.remove();
 }

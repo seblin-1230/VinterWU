@@ -294,7 +294,7 @@ figure.browse:hover {
     transform: scale(1.05);
 }
 
-figure.browse img {
+figure.browse img:not(:only-child) { /* Exludes buttons lol */
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -347,6 +347,23 @@ figure.browse>*:not(img) {
 
 figure.browse:hover>*:not(img) {
     opacity: 100%;
+}
+
+figure.browse button {
+    top: 0px;
+    right: 0px;
+
+    width: 10%;
+
+    margin: 0px;
+
+    background-color: whitesmoke;
+
+    opacity: 100%;
+}
+
+figure.browse button img {
+    width: 100%;
 }
 
 /* TODO Browse aside*/

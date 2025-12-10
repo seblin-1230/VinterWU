@@ -5,22 +5,23 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>
-        NatureNest
+        Nature Nest
     </title>
     <link href="css/style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&amp;display=swap"
         rel="stylesheet" />
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <script src="js/browse-save.js"></script>
 </head>
 
-<body>
+<body class="browse">
     <div id="browse-grid">
         <header class="browse">
             <img alt="A temporary logo for the website" class="logo" src="./img/logo.svg" />
             <h1>
-                NatureNest
+                Nature Nest
             </h1>
             <input id="searchbar" placeholder="Search..." type="text" />
         </header>
@@ -36,69 +37,120 @@
             </a>
         </nav>
         <main class="browse">
-            <figure class="browse">
-                <img src="./img/places-small/ali-kazal-J6ci4_mglbA-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/andrei-r-popescu-CRK1izT0mwY-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/andres-dallimonti--_F5_acTm7o-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/colin-watts-jckN7KiMOXY-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/ginny-rose-stewart-VJwxdBqICJA-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/hanna-lazar-4VPNxV9C34w-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/joshua-earle-Msegahfawv8-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/joshua-tsu-10hHjRSfBgA-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/junel-mujar-p-YhoHYOHvo-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/kirill-fokin-rZUL32jxROo-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/le-sixieme-reve-WrCWAckCLWw-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/leo_visions-jIvIRbtu77A-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/lorenzo-zunino-VO2_z-eg0VM-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/marek-piwnicki-rgGXloz8juY-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/pascal-debrunner-U-eRC8Q5iEY-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/polina-kuzovkova--ZhqyFURr7s-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/rod-long-yQJfvo_9eBs-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/royce-fonseca-rMQNJPeTvgg-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/thierry-lemaitre-hrIQN3E1ZTY-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/thierry-lemaitre-K4gXZ-WLaoE-unsplash-SMALL.jpg" />
-            </figure>
-            <figure class="browse">
-                <img src="./img/places-small/ytalo-marinho-jdBs5h1fNoY-unsplash-SMALL.jpg" />
-            </figure>
+            <div class="collumn" id="1">
+                <figure class="browse">
+                    <img src="./img/places-small/ali-kazal-J6ci4_mglbA-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Tranquil Waters Escape</figcaption>
+                    <button type="button" id="1" onclick="save_place()"><img src="img/save-instagram-not-saved.png" alt="Save image"></button>
+                    <p class="browse">Spend a quiet day exploring a clear mountain lake surrounded by evergreens and calm, open views. This trip offers a relaxed paddle across gentle water, a chance to take in the scenery at your own pace, and space to unwind without crowds. Perfect for anyone looking for a simple, refreshing break in nature.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/andrei-r-popescu-CRK1izT0mwY-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Quiet Volcano Vista</figcaption>
+                    <p class="browse">Take a steady walk across volcanic terrain where muted colors and soft light shape a calm, almost otherworldly landscape. This trip offers a chance to see rugged slopes, cooled lava fields, and pockets of hardy vegetation up close. It's a slow-paced outing suited for anyone who enjoys peaceful paths and striking natural scenery without the rush.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/andres-dallimonti--_F5_acTm7o-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Golden Cliff Reflection</figcaption>
+                    <p class="browse">Visit a calm shoreline where warm sunlight glides across rugged rock and still water mirrors the entire scene. This trip offers an easy, unhurried moment to enjoy open space, soft colors, and a clear view of the landscape. Ideal for anyone looking for a peaceful stop with simple, striking scenery.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/colin-watts-jckN7KiMOXY-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Ridge-Top Cloudfall Lookout</figcaption>
+                    <p class="browse">Enjoy a quiet walk to a high viewpoint where low clouds slide gently through the cliffs like a soft waterfall. Bright wildflowers and rugged peaks make this a simple but memorable stop for anyone who likes fresh air, open horizons, and a calm atmosphere above the valley.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/ginny-rose-stewart-VJwxdBqICJA-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Misty Lakeside Morning</figcaption>
+                    <p class="browse">Start the day beside a quiet lake where thin mist drifts over still water and forested hills form a gentle backdrop. This outing offers an easy, peaceful setting for anyone who appreciates calm views, soft light, and a slow start surrounded by nature.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/hanna-lazar-4VPNxV9C34w-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Snow-Covered Forest Walk</figcaption>
+                    <p class="browse">Take a calm stroll through tall evergreens coated in fresh snow. The quiet atmosphere, soft light, and steady path make this a simple winter outing for anyone who enjoys peaceful woods and a gentle break from busy surroundings.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/joshua-earle-Msegahfawv8-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">High-Ridge Mist Trek</figcaption>
+                    <p class="browse">Follow a narrow, snowy ridge where the peaks rise quietly through thick fog. This route offers a slow, steady walk with wide, muted views and a strong sense of calm. A good choice for those who enjoy simple, atmospheric mountain paths without the need for anything fast-paced.</p>
+                </figure>
+            </div>
+
+            <div class="collumn" id="2">
+                <figure class="browse">
+                    <img src="./img/places-small/joshua-tsu-10hHjRSfBgA-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Granite Valley Overlook</figcaption>
+                    <p class="browse">Take a relaxed hike to a viewpoint where wide granite slopes and forested ridges stretch into the distance. Clear skies and open terrain make this a steady, uncomplicated outing for anyone who enjoys spacious views and a calm day in the mountains.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/junel-mujar-p-YhoHYOHvo-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Quiet Sunset Shoreline</figcaption>
+                    <p class="browse">End the day by the water as soft waves roll in and warm light filters through layered clouds. This simple seaside stop offers a calm place to sit, watch the sky shift, and enjoy an easy moment by the coast.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/kirill-fokin-rZUL32jxROo-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Sunset Alpine Ridge</figcaption>
+                    <p class="browse">Watch the last light of the day settle across snow-dusted peaks and dark evergreens. This peaceful mountain viewpoint offers steady terrain, crisp air, and a warm glow on the cliffs—an easy place to pause and take in the evening landscape.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/le-sixieme-reve-WrCWAckCLWw-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Morning Meadow Plateau</figcaption>
+                    <p class="browse">Take a gentle walk through open fields where early light settles on fresh greenery and a tall limestone plateau rises above the valley. This stop offers clear views, calm air, and an easy pace—great for anyone who enjoys simple landscapes and a quiet start to the day.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/leo_visions-jIvIRbtu77A-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Sunset Over Granite Peaks</figcaption>
+                    <p class="browse">Take in the evening light as it settles across wide ridges and the smooth face of a towering granite formation. This spot offers a calm overlook with warm colors, steady terrain, and an easy moment to watch the day fade over the mountains.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/lorenzo-zunino-VO2_z-eg0VM-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Autumn Forest Path</figcaption>
+                    <p class="browse">Wander through a stand of golden trees as the season shifts and soft light settles between the branches. This quiet woodland route offers gentle ground, warm color, and a simple, unhurried way to enjoy the calm of early autumn.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/marek-piwnicki-rgGXloz8juY-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Soft-Light Mountain Range</figcaption>
+                    <p class="browse">Enjoy a quiet viewpoint where warm dusk tones rest gently on rugged peaks and drifting clouds move through the valleys. This peaceful overlook offers wide horizons, mild colors, and an easy chance to take in the evening calm of the high country.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/ytalo-marinho-jdBs5h1fNoY-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Quiet Desert Foothills</figcaption>
+                    <p class="browse">Walk across open, sun-lit ground toward gentle, multicolored slopes in the distance. This calm desert stretch offers wide views, steady footing, and a simple chance to take in the quiet of the high plains.</p>
+                </figure>
+            </div>
+
+            <div class="collumn" id="3">
+                <figure class="browse">
+                    <img src="./img/places-small/pascal-debrunner-U-eRC8Q5iEY-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Sunlit Forest Trail</figcaption>
+                    <p class="browse">Follow a gentle path through tall trees as soft light filters through morning mist. This calm woodland walk offers warm color, quiet air, and an easy way to enjoy a peaceful start among the leaves.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/polina-kuzovkova--ZhqyFURr7s-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Golden Leaf Path</figcaption>
+                    <p class="browse">Wander down a quiet trail blanketed in autumn leaves and lined with tall trees in full seasonal color. This gentle forest walk offers warm tones, soft light, and a relaxed way to enjoy the calm of a late-fall afternoon.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/rod-long-yQJfvo_9eBs-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Mangrove River Bend</figcaption>
+                    <p class="browse">Explore a winding waterway that flows gently through dense, bright-green mangroves. This easygoing trip offers smooth channels, shaded pockets, and a quiet atmosphere—perfect for anyone who enjoys calm nature routes and slow movement along the water.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/royce-fonseca-rMQNJPeTvgg-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Desert Hills at Dusk</figcaption>
+                    <p class="browse">Stroll across gentle, cactus-dotted slopes as the sky shifts through soft evening colors. This quiet desert outing offers open views, warm tones, and an easy pace—ideal for anyone who enjoys calm landscapes and wide, peaceful horizons.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/thierry-lemaitre-hrIQN3E1ZTY-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Sunset Over Rolling Hills</figcaption>
+                    <p class="browse">Watch the sun drift low above layered ridgelines as warm evening light softens the landscape. This overlook offers wide, open views and a calm moment to enjoy the gentle fade of daylight across the distant hills.</p>
+                </figure>
+                <figure class="browse">
+                    <img src="./img/places-small/thierry-lemaitre-K4gXZ-WLaoE-unsplash-SMALL.jpg" />
+                    <figcaption class="browse">Alpine Lake Lookout</figcaption>
+                    <p class="browse">Enjoy a clear view of a calm mountain lake set between rolling grassy slopes and snow-covered peaks. This easygoing stop offers fresh air, bright water, and a steady path—perfect for anyone who likes quiet high-alpine scenery without anything too demanding.</p>
+                </figure>
+            </div>
         </main>
         <aside>
         </aside>

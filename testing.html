@@ -9,51 +9,25 @@
 </head>
 
 <body>
-    <h1>CSS-only Carousel</h1>
+    <div class="carousel">
+        <div class="carousel-gallery">
+            <img src="img/places-medium/ali-kazal-J6ci4_mglbA-unsplash-MEDIUM.jpg" alt="" class="gallery-img" id="image-1">
+            <img src="img/places-medium/andres-dallimonti--_F5_acTm7o-unsplash-MEDIUM.jpg" alt="" class="gallery-img" id="image-2">
+            <img src="img/places-medium/colin-watts-jckN7KiMOXY-unsplash-MEDIUM.jpg" alt="" class="gallery-img" id="image-3">
+        </div>
 
-    <p>This carousel is created with HTML and CSS only.</p>
-
-    <section class="carousel" aria-label="Gallery">
-        <ol class="carousel__viewport">
-            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                <div class="carousel__snapper">
-                    <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
-                    <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-                </div>
-            </li>
-            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                <div class="carousel__snapper"></div>
-                <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-            </li>
-            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                <div class="carousel__snapper"></div>
-                <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
-            </li>
-            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-                <div class="carousel__snapper"></div>
-                <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
-                <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
-            </li>
-        </ol>
-        <aside class="carousel__navigation">
-            <ol class="carousel__navigation-list">
-                <li class="carousel__navigation-item">
-                    <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
-                </li>
-                <li class="carousel__navigation-item">
-                    <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
-                </li>
-                <li class="carousel__navigation-item">
-                    <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
-                </li>
-                <li class="carousel__navigation-item">
-                    <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
-                </li>
-            </ol>
-        </aside>
-    </section>
+        <div class="carousel-nav">
+            <a href="#image-1">
+                <img src="img/places-small/ali-kazal-J6ci4_mglbA-unsplash-SMALL.jpg" alt="" class="lil-nav-img">
+            </a>
+            <a href="#image-2">
+                <img src="img/places-small/andres-dallimonti--_F5_acTm7o-unsplash-SMALL.jpg" alt="" class="lil-nav-img">
+            </a>
+            <a href="#image-3">
+                <img src="img/places-small/colin-watts-jckN7KiMOXY-unsplash-SMALL.jpg" alt="" class="lil-nav-img">
+            </a>
+        </div>
+    </div>
 </body>
 
 </html>

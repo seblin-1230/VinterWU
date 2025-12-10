@@ -1,9 +1,9 @@
 body {
     font-family: "Stack Sans Text", sans-serif;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
 
     margin: 0px;
-    background-color: #ebf2f2;
+    background-color: #161919;
 }
 
 /* --------- Grid containers --------- */
@@ -11,7 +11,7 @@ body {
 #landing-grid {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10vh 7vh 70vh 13vh;
+    grid-template-rows: 10vh 7vh 90vh 15vh;
     grid-template-areas:
         "header"
         "nav"
@@ -47,15 +47,6 @@ header {
 
 nav {
     grid-area: nav;
-    background-color: #bbc0c0;
-
-    border: #939393 solid thick;
-    border-top: #6d6d6d dotted medium;
-    border-radius: 0px 0px 15px 15px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 main.landing {
@@ -64,9 +55,7 @@ main.landing {
 
 main.browse {
     grid-area: main;
-    background-color: orange;
 }
-
 
 #sub-main {
     grid-area: sub-main;
@@ -83,12 +72,12 @@ aside {
 }
 
 
-/* --------- Header stuff ---------  (TODO: Very basic just a gray background) */
+/* --------- Header stuff --------- */
 
 header {
-    background-color: #092825;
-    border-left: #939393 solid thick;
-    border-right: #939393 solid thick;
+    background-color: #282e2d;
+    border-left: #4d5b53 solid medium;
+    border-right: #4d5b53 solid medium;
 
     display: flex;
     align-items: center;
@@ -112,7 +101,7 @@ input#searchbar {
 
     padding: 0px 10% 0px 2%;
 
-    font-size: 100%;
+    font-size: 0.9rem;
 
     transition: all 0.2s ease;
 }
@@ -130,14 +119,26 @@ img.logo {
 h1 {
     margin-left: 2%;
 
-    font-size: 40px;
+    font-size: 3rem;
     color: #27ae60;
     font-weight: 300;
     letter-spacing: 0.5vw;
 }
 
 
-/* --------- Nav stuff --------- (TODO: Very basic just a gray background) */
+/* --------- Nav stuff --------- */
+
+nav {
+    background-color: #282e2d;
+
+    border: #4d5b53 solid medium;
+    border-top: #6d6d6d dotted medium;
+    border-radius: 0px 0px 15px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 nav>* {
     margin-right: 3%;
@@ -146,9 +147,9 @@ nav>* {
 
 nav a {
     color: #287b69;
-    font-size: 150%;
+    font-size: 1.8rem;
     text-decoration: none;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.2vw;
 
     transition: all 0.4s ease;
@@ -157,16 +158,215 @@ nav a {
 nav a:hover {
     color: #27ae60;
     font-weight: 400;
-    font-size: 160%;
+    font-size: 2rem;
 }
 
 nav a#selected {
     color: #27ae60;
     font-weight: 400;
-    font-size: 160%;
+    font-size: 2rem;
 }
 
 /* --------- Landing stuff --------- */
+
+main.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2.landing {
+    color: whitesmoke;
+    font-size: 1.4rem;
+}
+
+div.carousel {
+    overflow: hidden;
+    width: 100vw;
+    height: 100%;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    height: inherit;
+}
+
+figure.landing {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+
+    width: fit-content;
+
+    transition: transform 0.2s ease-in-out;
+
+    scroll-snap-align: center;
+    margin-left: 50vh;
+}
+
+figure.landing img {
+    display: block;
+    max-height: 100%;
+    max-width: max-content;
+
+    border-radius: 15px;
+    border: whitesmoke solid medium;
+}
+
+figure.landing:last-child {
+    margin-right: 50vh;
+}
+
+figure.landing figcaption {
+    position: absolute;
+    top: 0px;
+
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    font-size: 1.42rem;
+    font-weight: 500;
+
+    padding: 1.5%;
+    padding-bottom: 1%;
+    padding-top: 0.7%;
+
+    border-radius: 0px 0px 15px 15px;
+    border-top: whitesmoke solid medium;
+}
+
+figure.landing p {
+    position: absolute;
+    bottom: 0px;
+
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    font-size: 1.04rem;
+    font-weight: 500;
+
+    padding: 1.5%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    margin: 0px;
+
+    border-radius: 0px 0px 15px 15px;
+    border: white solid medium;
+    border-top: none;
+}
+
+
+/* --------- Browse stuff --------- */
+
+main.browse {
+    display: flex;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+aside {
+    background-color: #282e2d;
+
+    border: #4d5b53 solid medium;
+    border-right: none;
+    margin: 5% 0px 5% 0px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+div.collumn {
+    width: 33%;
+}
+
+figure.browse {
+    position: relative;
+    margin: 5%;
+
+    transition: transform 0.2s ease-in-out;
+}
+
+figure.browse:hover {
+    transform: scale(1.05);
+}
+
+figure.browse img:not(:only-child) { /* Exludes buttons lol */
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: #4d5b53 solid 3px;
+    border-radius: 15px;
+}
+
+figure.browse p {
+    box-sizing: border-box;
+    font-size: 0.77rem;
+    font-weight: 300;
+
+    bottom: 0px;
+    left: 0px;
+
+    padding: 4% 5% 3%;
+
+    border-radius: 0px 0px 15px 15px;
+    border-bottom: #4d5b53 solid 3px;
+    border-left: #4d5b53 solid 3px;
+    border-right: #4d5b53 solid 3px;
+    ;
+}
+
+figure.browse figcaption {
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    top: 0px;
+    left: 0px;
+
+    padding: 2% 3% 2.5% 2%;
+
+    border-radius: 15px 0px;
+    border-top: #4d5b53 solid 3px;
+    border-left: #4d5b53 solid 3px;
+}
+
+figure.browse>*:not(img) {
+    color: white;
+
+    opacity: 0%;
+    position: absolute;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0px;
+
+    transition: opacity 0.75s ease-in-out;
+}
+
+figure.browse:hover>*:not(img) {
+    opacity: 100%;
+}
+
+figure.browse button {
+    top: 0px;
+    right: 0px;
+
+    width: 10%;
+
+    margin: 0px;
+
+    background-color: whitesmoke;
+
+    opacity: 100%;
+}
+
+figure.browse button img {
+    width: 100%;
+}
+
+/* TODO Browse aside*/
 
 
 /* --------- Leadership stuff --------- */
@@ -188,6 +388,7 @@ body.leadership {
     margin-top: 2%;
 
     font-weight: 100;
+    font-size: 1.8rem;
     letter-spacing: 0.4vw;
 }
 
@@ -199,7 +400,6 @@ body.leadership {
 }
 
 figure.leadership {
-    /* background-color: #b1b1b1; */
     width: 15%;
 
     display: flex;
@@ -208,8 +408,7 @@ figure.leadership {
 
     padding: 0.75%;
 
-    /* border: solid #888888; */
-    border-radius: 20px;
+    border-radius: 15px;
 
     transition: all 0.3s ease-in-out;
 }
@@ -224,7 +423,7 @@ figure.leadership img {
     width: 100%;
 
     border: solid #888888;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 figure.leadership img:hover {
@@ -233,13 +432,13 @@ figure.leadership img:hover {
 
 figcaption.leadership {
     font-weight: 250;
-    font-size: 1.25vw;
+    font-size: 0.9rem;
     margin-bottom: 0.5vh;
 }
 
 figcaption.leadership~* {
     line-height: 0px;
-    font-size: 0.8vw;
+    font-size: 0.77rem;
     margin-top: 0px;
     font-weight: 350;
 }

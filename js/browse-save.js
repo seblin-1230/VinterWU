@@ -16,7 +16,8 @@ function save_button_click(button) {
  */
 function save_place(button) {
     saved_places.push(button.id)
-    console.log("Added", button.id)
+    
+    button.children[0].src = "img/save-instagram-saved.png"
 }
 
 /**
@@ -24,5 +25,6 @@ function save_place(button) {
  */
 function remove_place(button) {
     saved_places.splice(saved_places.indexOf(button.id))
-    console.log("Removed", button.id)
+
+    button.children[0].src = "img/save-instagram-not-saved.png"
 }

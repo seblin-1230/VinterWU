@@ -189,9 +189,7 @@ img.carousel {
 div.carousel {
     overflow: hidden;
     width: 100vw;
-    display: grid;
-    grid-template-rows: 90%;
-    grid-gap: 10px;
+    height: 100%;
 }
 
 .gallery {
@@ -199,6 +197,7 @@ div.carousel {
     flex-direction: row;
     overflow: scroll;
     scroll-snap-type: x mandatory;
+    height: inherit;
 }
 
 figure.landing {

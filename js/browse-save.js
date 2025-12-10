@@ -17,7 +17,9 @@ function save_button_click(button) {
 function save_place(name_to_add) {
     saved_places.push(name_to_add);
 
-    document.getElementById(name_to_add).children[0].src = "img/save-instagram-saved.png"; // Change button image to empty one
+    const save_button = document.getElementById(name_to_add)
+    save_button.children[0].src = "img/save-instagram-saved.png"; // Change button image to empty one
+    save_button.setAttribute("saved", "");
 
     const aside = document.getElementsByTagName("aside")[0];
 
@@ -55,7 +57,9 @@ function save_place(name_to_add) {
 function remove_place(name_to_remove) {
     saved_places.splice(saved_places.indexOf(name_to_remove));
 
-    document.getElementById(name_to_remove).children[0].src = "img/save-instagram-not-saved.png"; // Change button image to full one
+    const save_button = document.getElementById(name_to_remove);
+    save_button.children[0].src = "img/save-instagram-not-saved.png"; // Change button image to full one
+    save_button.removeAttribute("saved");
 
     const paragraph = document.getElementsByName(name_to_remove)[0];
     paragraph.remove();

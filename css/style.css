@@ -382,6 +382,10 @@ figure.browse button:active {
     width: 11%;
 }
 
+figure.browse button[saved] {
+    opacity: 100%;
+}
+
 figure.browse button img {
     width: 100%;
 }

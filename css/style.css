@@ -8,7 +8,7 @@ body {
 }
 
 /* --------- Grid containers --------- */
-
+/*#region*/
 #landing-grid {
     display: grid;
     grid-template-columns: 100%;
@@ -39,9 +39,10 @@ body {
         "nav"
         "portrait";
 }
+/*#endregion*/
 
 /* --------- Grid areas --------- */
-
+/*#region*/
 header {
     grid-area: header;
 }
@@ -70,10 +71,10 @@ aside {
 #portrait {
     grid-area: portrait;
 }
-
+/*#endregion*/
 
 /* --------- Header stuff --------- */
-
+/*#region*/
 header {
     background-color: #282e2d;
     border-left: #4d5b53 solid medium;
@@ -124,10 +125,10 @@ h1 {
     font-weight: 300;
     letter-spacing: 0.5vw;
 }
-
+/*#endregion*/
 
 /* --------- Nav stuff --------- */
-
+/*#region*/
 nav {
     background-color: #282e2d;
 
@@ -166,9 +167,10 @@ nav a#selected {
     font-weight: 400;
     font-size: 2rem;
 }
+/*#endregion*/
 
 /* --------- Landing stuff --------- */
-
+/*#region*/
 main.landing {
     display: flex;
     flex-direction: column;
@@ -258,10 +260,10 @@ figure.landing p {
     border: white solid medium;
     border-top: none;
 }
-
+/*#endregion*/
 
 /* --------- Browse stuff --------- */
-
+/*#region*/
 main.browse {
     display: flex;
 
@@ -448,10 +450,10 @@ aside.browse h2 {
 .saved-places button img {
     width: 100%;
 }
-
+/*#endregion*/
 
 /* --------- Leadership stuff --------- */
-
+/*#region*/
 body.leadership {
     background: url('../img/leadership-background.jpg') no-repeat;
     background-size: 100%;
@@ -523,3 +525,4 @@ figcaption.leadership~* {
     margin-top: 0px;
     font-weight: 350;
 }
+/*#endregion*/

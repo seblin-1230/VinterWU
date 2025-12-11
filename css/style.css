@@ -382,9 +382,6 @@ figure.browse button img {
 }
 
 aside.browse {
-    display: flex;
-    flex-direction: column;
-
     background-color: #282e2d;
 
     border: #4d5b53 solid medium;
@@ -392,7 +389,7 @@ aside.browse {
     margin: 5% 0px 5% 0px;
     border-radius: 15px 0px 0px 15px;
 
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .saved-places {

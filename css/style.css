@@ -270,15 +270,6 @@ main.browse {
     overflow-y: scroll;
 }
 
-aside {
-    background-color: #282e2d;
-
-    border: #4d5b53 solid medium;
-    border-right: none;
-    margin: 5% 0px 5% 0px;
-    border-radius: 15px 0px 0px 15px;
-}
-
 div.collumn {
     width: 33%;
 }
@@ -394,7 +385,14 @@ aside.browse {
     display: flex;
     flex-direction: column;
 
-    overflow-y: scroll;
+    background-color: #282e2d;
+
+    border: #4d5b53 solid medium;
+    border-right: none;
+    margin: 5% 0px 5% 0px;
+    border-radius: 15px 0px 0px 15px;
+
+    overflow: scroll;
 }
 
 .saved-places {

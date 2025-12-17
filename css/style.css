@@ -316,7 +316,7 @@ figure.browse img:not(:only-child) {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    border: #4d5b53 solid 3px;
+    /* border: #4d5b53 solid 3px; */
     border-radius: 15px;
 }
 
@@ -331,9 +331,9 @@ figure.browse p {
     padding: 4% 5% 3%;
 
     border-radius: 0px 0px 15px 15px;
-    border-bottom: #4d5b53 solid 3px;
+    /* border-bottom: #4d5b53 solid 3px;
     border-left: #4d5b53 solid 3px;
-    border-right: #4d5b53 solid 3px;
+    border-right: #4d5b53 solid 3px; */
     ;
 }
 
@@ -347,8 +347,8 @@ figure.browse figcaption {
     padding: 2% 3% 2.5% 2%;
 
     border-radius: 15px 0px;
-    border-top: #4d5b53 solid 3px;
-    border-left: #4d5b53 solid 3px;
+    /* border-top: #4d5b53 solid 3px; */
+    /* border-left: #4d5b53 solid 3px; */
 }
 
 figure.browse>*:not(img):not(button) {
@@ -384,7 +384,7 @@ figure.browse button {
     background-color: rgb(209, 209, 209);
 
     border-radius: 0px 15px;
-    border: #4d5b53 solid 3px;
+    /* border: #4d5b53 solid 3px; */
 
     padding: 1%;
 

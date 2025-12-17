@@ -33,7 +33,7 @@ body {
 #leadership-grid {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10vh 7vh 83vh;
+    grid-template-rows: 10vh 7vh 87vh;
     grid-template-areas:
         "header"
         "nav"
@@ -473,11 +473,6 @@ aside.browse h2 {
 
 /* --------- Leadership stuff --------- */
 /*#region*/
-body.leadership {
-    background: url('../img/leadership-background.jpg') no-repeat;
-    background-size: 100%;
-}
-
 #portrait {
     display: flex;
     flex-direction: column;
@@ -517,8 +512,8 @@ figure.leadership {
 
 figure.leadership:hover {
     width: 17%;
-    background-color: #ffce64;
-    border: solid #b79a5a;
+    background-color: rgb(202, 202, 202);
+    border: solid black;
 }
 
 figure.leadership img {
@@ -526,10 +521,6 @@ figure.leadership img {
 
     border: solid #888888;
     border-radius: 15px;
-}
-
-figure.leadership img:hover {
-    border: solid #b79a5a;
 }
 
 figcaption.leadership {

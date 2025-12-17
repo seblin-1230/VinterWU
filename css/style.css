@@ -4,7 +4,7 @@ body {
     font-optical-sizing: auto;
 
     margin: 0px;
-    background-color: #161919;
+    background-color: white;
 }
 
 /* --------- Grid containers --------- */
@@ -75,9 +75,7 @@ aside {
 /* --------- Header stuff --------- */
 /*#region*/
 header {
-    background-color: #282e2d;
-    border-left: #4d5b53 solid medium;
-    border-right: #4d5b53 solid medium;
+    background-color: white;
 
     display: flex;
     align-items: center;
@@ -129,11 +127,10 @@ h1 {
 /* --------- Nav stuff --------- */
 /*#region*/
 nav {
-    background-color: #282e2d;
+    background-color: white;
 
-    border: #4d5b53 solid medium;
     border-top: #6d6d6d dotted medium;
-    border-radius: 0px 0px 15px 15px;
+    border-bottom: #6d6d6d dotted medium;
 
     display: flex;
     justify-content: center;
@@ -267,7 +264,7 @@ figure.landing p {
 
     margin-top: 2%;
 
-    background-color: #282e2d;
+    background-color: white;
     border-top: #4d5b53 solid medium;
 }
 
@@ -412,7 +409,7 @@ figure.browse button img {
 }
 
 aside.browse {
-    background-color: #282e2d;
+    background-color: white;
 
     border: #4d5b53 solid medium;
     border-right: none;

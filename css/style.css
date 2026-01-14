@@ -131,9 +131,8 @@ h1 {
 nav {
     background-color: #282e2d;
 
-    border: #4d5b53 solid medium;
     border-top: #6d6d6d dotted medium;
-    border-radius: 0px 0px 15px 15px;
+    border-bottom: #6d6d6d dotted medium;
 
     display: flex;
     justify-content: center;
@@ -267,7 +266,7 @@ figure.landing p {
 
     margin-top: 2%;
 
-    background-color: #282e2d;
+    background-color: white;
     border-top: #4d5b53 solid medium;
 }
 
@@ -412,7 +411,7 @@ figure.browse button img {
 }
 
 aside.browse {
-    background-color: #282e2d;
+    background-color: white;
 
     border: #4d5b53 solid medium;
     border-right: none;
@@ -423,7 +422,7 @@ aside.browse {
 }
 
 aside.browse #title {
-    border-bottom: #bababa dotted medium;
+    border-bottom: #74877c dashed medium;
 
     padding: 2% 0px 2%;
 }
@@ -444,7 +443,7 @@ aside.browse h2 {
     justify-content: space-between;
     align-items: center;
 
-    border-bottom: #bababa dotted thin;
+    border-bottom: #6d6d6d dotted thin;
 }
 
 .saved-places p {

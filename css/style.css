@@ -495,6 +495,7 @@ aside.browse h2 {
     font-weight: 100;
     font-size: 1.8rem;
     letter-spacing: 0.4vw;
+    color: white;
 }
 
 #figure-div {
@@ -520,7 +521,7 @@ figure.leadership {
 
 figure.leadership:hover {
     width: 17%;
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(120, 120, 120);
     border: solid black;
 }
 
@@ -535,6 +536,12 @@ figcaption.leadership {
     font-weight: 250;
     font-size: 0.9rem;
     margin-bottom: 0.5vh;
+    color: white;
+
+    transition: color 1s ease-in-out;
+}
+figcaption.leadership:hover {
+    color: black;
 }
 
 figcaption.leadership~* {
@@ -542,5 +549,11 @@ figcaption.leadership~* {
     font-size: 0.77rem;
     margin-top: 0px;
     font-weight: 350;
+    color: white;
+
+    transition: color 1s ease-in-out;
+}
+figcaption.leadership~*:hover {
+    color: black;
 }
 /*#endregion*/

@@ -4,7 +4,7 @@ body {
     font-optical-sizing: auto;
 
     margin: 0px;
-    background-color: white;
+    background-color: #161919;
 }
 
 /* --------- Grid containers --------- */
@@ -75,7 +75,9 @@ aside {
 /* --------- Header stuff --------- */
 /*#region*/
 header {
-    background-color: white;
+    background-color: #282e2d;
+    border-left: #4d5b53 solid medium;
+    border-right: #4d5b53 solid medium;
 
     display: flex;
     align-items: center;
@@ -127,10 +129,11 @@ h1 {
 /* --------- Nav stuff --------- */
 /*#region*/
 nav {
-    background-color: white;
+    background-color: #282e2d;
 
-    border-top: #bababa dashed medium;
-    border-bottom: #bababa solid medium;
+    border: #4d5b53 solid medium;
+    border-top: #6d6d6d dotted medium;
+    border-radius: 0px 0px 15px 15px;
 
     display: flex;
     justify-content: center;
@@ -264,7 +267,8 @@ figure.landing p {
 
     margin-top: 2%;
 
-    background-color: white;
+    background-color: #282e2d;
+    border-top: #4d5b53 solid medium;
 }
 
 #browse-button {
@@ -408,7 +412,12 @@ figure.browse button img {
 }
 
 aside.browse {
-    border-left: #bababa solid medium;
+    background-color: #282e2d;
+
+    border: #4d5b53 solid medium;
+    border-right: none;
+    margin: 5% 0px 5% 0px;
+    border-radius: 15px 0px 0px 15px;
 
     overflow-y: scroll;
 }
